@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+   <h1 class=title>Hello world!</h1>
+   <p>Today is <strong>{{ the_date }}</strong>, background color is <strong>
+     <span class="{{ css_bg }}"> {{ css_bg }}</strong> and another day to do something new! 🔭</span></p>
+   {% for n in numbers %}
+        {% if n % 2 == 0 %}
+            <div class={{ css_bg }}>The number <strong>{{ n }}</strong> divided by 2 has remainder 0.</div>
+        {% else %}
+            <div class={{ css_bg }}>The number <strong>{{ n }}</strong> divided by 2 has reminder 1.</div>
+        {% endif %}
+   {% endfor %}
+   <p>Getting information by {{ hostname }}!</p>
+</body>
+</html>

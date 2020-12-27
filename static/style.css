@@ -1,0 +1,17 @@
+body{
+    width: 90%;
+    margin: auto;
+    font-family: "Ubuntu";
+}
+
+.green {
+    background-color: greenyellow;
+ }
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: mediumpurple;
+}
